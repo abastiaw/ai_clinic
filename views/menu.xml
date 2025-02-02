@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data>
+    
+        <menuitem
+            id="ai_clinic_ai_doctors_menu"
+            name="Ai Clinic | Docker"
+            sequence="1"/>
+        
+        <menuitem
+            id="ai_clinic_ai_patients_menu"
+            name="Ai Clinic | Pasien"
+            sequence="2"/>
+    
+    </data>
+    
+
+</odoo>

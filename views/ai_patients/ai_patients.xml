@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data>
+
+        <record id="ai_clinic.ai_patients_view_tree" model="ir.ui.view">
+            <field name="name">ai_clinic.ai_patients.view.tree</field>
+            <field name="model">ai_clinic.ai_patients</field>
+            <field name="arch" type="xml">
+                <tree string="">
+                    <field name="name" />
+                    <field name="dob" />
+                    <field name="gender" />
+                    <field name="address" />
+                    <field name="phone" />
+                    <field name="email" />
+                    <field name="emergency_contact" />
+                    <field name="marital_status" />
+                    <field name="nationality" />
+                    <field name="occupation" />
+                    <field name="insurance_provider" />
+                    <field name="insurance_number" />
+                    <field name="medical_history" />
+                    <field name="allergies" />
+                    <field name="created_date" />
+                    <field name="last_visit_date" />
+                    <field name="doctor_id" />
+                    <field name="is_active" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="ai_clinic.ai_patients_view_form" model="ir.ui.view">
+            <field name="name">ai_clinic.ai_patients.view.form</field>
+            <field name="model">ai_clinic.ai_patients</field>
+            <field name="arch" type="xml">
+                <form string="">
+                    <sheet>
+                        <group>
+                            <field name="name" />
+                            <field name="dob" />
+                            <field name="gender" />
+                            <field name="address" />
+                            <field name="phone" />
+                            <field name="email" />
+                            <field name="emergency_contact" />
+                            <field name="marital_status" />
+                            <field name="nationality" />
+                            <field name="occupation" />
+                            <field name="insurance_provider" />
+                            <field name="insurance_number" />
+                            <field name="medical_history" />
+                            <field name="allergies" />
+                            <field name="created_date" />
+                            <field name="last_visit_date" />
+                            <field name="doctor_id" />
+                            <field name="is_active" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    
+        <record id="ai_clinic.ai_patients_action" model="ir.actions.act_window">
+            <field name="name">Pasien</field>
+            <field name="res_model">ai_clinic.ai_patients</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    
+        <menuitem
+            id="ai_patients_menu_action"
+            name="Pasien"
+            action="ai_clinic.ai_patients_action"
+            parent="ai_clinic_ai_patients_menu"
+            sequence="1"/>
+    </data>
+    
+
+</odoo>
