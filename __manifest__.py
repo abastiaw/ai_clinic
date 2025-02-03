@@ -11,6 +11,7 @@
         'views/menu.xml',
         'views/ai_doctors/ai_doctors.xml',
         'views/ai_patients/ai_patients.xml',
+        'views/ai_patients/ai_patients_medical_records.xml',
     ],
     'installable': True,
     'auto_install': False,    	

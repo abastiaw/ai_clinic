@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data>
+
+        <record id="ai_clinic.ai_patients_medical_records_view_tree" model="ir.ui.view">
+            <field name="name">ai_clinic.ai_patients_medical_records.view.tree</field>
+            <field name="model">ai_clinic.ai_patients_medical_records</field>
+            <field name="arch" type="xml">
+                <tree string="">
+                    <field name="doctor_id" />
+                    <field name="patient_id" />
+                    <field name="date" />
+                    <field name="diagnosis" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="ai_clinic.ai_patients_medical_records_view_form" model="ir.ui.view">
+            <field name="name">ai_clinic.ai_patients_medical_records.view.form</field>
+            <field name="model">ai_clinic.ai_patients_medical_records</field>
+            <field name="arch" type="xml">
+                <form string="">
+                    <sheet>
+                        <group>
+                            <field name="doctor_id" />
+                            <field name="patient_id" />
+                            <field name="date" />
+                            <field name="diagnosis" />
+                            <field name="treatment" />
+                            <field name="notes" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    
+        <record id="ai_clinic.ai_patients_medical_records_action" model="ir.actions.act_window">
+            <field name="name">Rekam Medis</field>
+            <field name="res_model">ai_clinic.ai_patients_medical_records</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    
+        <menuitem
+            id="ai_patients_medical_records_menu_action"
+            name="Rekam Medis"
+            action="ai_clinic.ai_patients_medical_records_action"
+            parent="ai_clinic_ai_patients_menu"
+            sequence="2"/>
+    </data>
+    
+
+</odoo>

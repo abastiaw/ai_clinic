@@ -1,3 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_ai_clinic_ai_patients,ai_clinic.ai_patients,model_ai_clinic_ai_patients,,1,1,1,1
+access_ai_clinic_ai_patients_medical_records,ai_clinic.ai_patients_medical_records,model_ai_clinic_ai_patients_medical_records,,1,1,1,1
 access_ai_clinic_ai_doctors,ai_clinic.ai_doctors,model_ai_clinic_ai_doctors,,1,1,1,1
